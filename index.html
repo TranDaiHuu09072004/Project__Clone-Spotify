@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="grid_full">
+          <div class="header_navbar">
+            <div class="header_navbar--left">
+              <a href="#" class="header_navbar-logo">
+                <i class="header_navbar-logo--icon fa-brands fa-spotify"></i>
+              </a>
+              <div class="header_navbar-home">
+                <i class="header_navbar-home--icon fa-solid fa-house"></i>
+                <h3 class="heading-home">Home</h3>
+              </div>
+
+              <div class="header_navbar-search header_navbar-search--separate">
+                <i
+                  class="header_navbar-search--icon fa-solid fa-magnifying-glass"
+                ></i>
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="What do you want to play?"
+                />
+
+                <i
+                  class="header_navbar-browser--icon fa-solid fa-box-archive"
+                ></i>
+              </div>
+
+              <div class="icon-plus">
+                <i
+                  id="plus-icon"
+                  class="header_navbar-plus--icon fa-regular fa-plus-large"
+                >
+                </i>
+
+                <ul id="list-plus" class="list-item--plus">
+                  <li class="item-plus">
+                    <i class="item-plus--icons fa-regular fa-music"></i>
+                    <div class="heading-content">
+                      <span class="content-playlist">Playlist</span>
+                      <p class="des-playlist">
+                        Build a playlist with songs, or episodes
+                      </p>
+                    </div>
+                  </li>
+                  <div class="border-b"></div>
+                  <li class="item-plus">
+                    <i
+                      class="item-plus--icons_friend fa-solid fa-user-group"
+                    ></i>
+                    <div class="heading-content">
+                      <span class="content-playlist">Blend</span>
+                      <p class="des-playlist">
+                        Mix up your tastes with friends
+                      </p>
+                    </div>
+                  </li>
+                  <li class="item-plus">
+                    <i class="item-plus--icons fa-regular fa-folder"></i>
+                    <div class="heading-content">
+                      <span class="content-playlist">Folder</span>
+                      <p class="des-playlist">Organize your playlist</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header_navbar--right">
+              <a href="#" class="header_navbar-explorePremium">
+                Explore Premium
+              </a>
+              <a class="install-app">
+                ><i
+                  class="install-app--icon fa-regular fa-circle-arrow-down"
+                ></i>
+                <span class="install-app--heading">Install App</span>
+              </a>
+
+              <div class="bell">
+                <i class="icon-bell fa-regular fa-bell"></i>
+              </div>
+
+              <span class="user__account-name border-user__name"> T </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="content"></div>
+        <footer class="footer"></footer>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

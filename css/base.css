@@ -1,0 +1,58 @@
+:root {
+  --background-spotify: #000;
+  --white-color: #fff;
+  --text-color: #9c9c9c;
+  --background_hover-right: rgb(136, 32, 24);
+  --background-section: #202020;
+  --background-section-right-gadient: linear-gradient(
+    to bottom,
+    #393636,
+    #121212
+  );
+  --background-green: #19e68c;
+  --header-height: 64px;
+  --search-width: 531px;
+  --search-height: 45px;
+  --search-line-height: calc(var(--header-height) - var(--search-height));
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4rem;
+  box-sizing: border-box;
+}
+
+.grid_full {
+  width: 100%;
+}
+
+.search-input {
+  width: 334px;
+  flex: 1;
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  background-color: transparent;
+  height: var(--search-height);
+  position: relative;
+}
+
+.search-input::placeholder {
+  position: absolute;
+  color: #afaeaa;
+  top: 50%;
+  font-size: 1.6rem;
+  line-height: var(--search-height);
+  transform: translateY(-50%);
+  line-height: 30px;
+}
+
+.search-input:focus-within .header_navbar-search {
+  background-color: var(--white-color);
+}
