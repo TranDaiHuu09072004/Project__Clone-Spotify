@@ -9,11 +9,16 @@
     #393636,
     #121212
   );
+  --height-content: 569px;
+  --height-footer: 89px;
   --background-green: #19e68c;
   --header-height: 64px;
   --search-width: 434px;
   --search-height: 45px;
   --search-line-height: calc(var(--header-height) - var(--search-height));
+  --width-sidebar: 388px;
+  --width-sideright: 388px;
+  --width-main: 732px;
 }
 
 * {
@@ -26,6 +31,7 @@ html {
   font-family: "Montserrat", sans-serif;
   line-height: 1.4rem;
   box-sizing: border-box;
+  overflow-y: hidden;
 }
 
 @keyframes Zoomicons {
@@ -70,4 +76,17 @@ html {
 
 .search-input:focus-within .header_navbar-search {
   background-color: var(--white-color);
+}
+
+.input_playlist {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--white-color);
+  /* display: none; */
+}
+
+.input_playlist::placeholder {
+  color: #afaeaa;
+  font-size: 1.4rem;
 }

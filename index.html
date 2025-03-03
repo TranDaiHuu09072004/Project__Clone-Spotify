@@ -98,9 +98,9 @@
               </div>
             </div>
             <div class="header_navbar--right">
-              <a href="#" class="header_navbar-explorePremium">
+              <span href="#" class="header_navbar-explorePremium">
                 Explore Premium
-              </a>
+              </span>
               <a class="install-app">
                 ><i
                   class="install-app--icon fa-regular fa-circle-arrow-down"
@@ -176,7 +176,187 @@
 
       <div class="app__container">
         <div class="content">
-          <aside class="sidebar">ádasda</aside>
+          <aside class="sidebar">
+            <div class="sidebar__wrapper">
+              <div class="header__yourlibrary">
+                <div class="wrapper--yourlibrary">
+                  <i class="btn__icons--list-library fa-solid fa-list"></i>
+                  <span class="library__name">Your Library</span>
+                </div>
+                <div class="flex__icons">
+                  <i
+                    id="icons--list-plus"
+                    class="btn__icons--list-plus fa-solid fa-plus"
+                  ></i>
+                  <ul id="listItemAside" class="list__item--plus">
+                    <li class="item--plus_aside">
+                      <div class="heading-content__aside">
+                        <i
+                          class="item--plus_aside-icon fa-regular fa-music"
+                        ></i>
+                        <span class="content-playlist--aside">
+                          Create a new playlist</span
+                        >
+                      </div>
+                    </li>
+                    <li class="item--plus_aside">
+                      <div class="heading-content__aside">
+                        <i
+                          class="item--plus_aside-icon fa-regular fa-folder"
+                        ></i>
+                        <span class="content-playlist--aside">
+                          Create a playlist folder</span
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                  <i
+                    class="btn__icons--list-showmore fa-solid fa-arrow-right"
+                  ></i>
+                </div>
+              </div>
+              <div class="header__yourlibrary2">
+                <span class="header__yourlibrary2--text"
+                  ><h3 class="header__yourlibrary--btn">Playlists</h3></span
+                >
+                <span class="header__yourlibrary2--text">
+                  <h3 class="header__yourlibrary--btn">Artists</h3></span
+                >
+              </div>
+              <div class="list__song--playlist">
+                <div class="search_playlist">
+                  <div class="wrapper_search">
+                    <i
+                      class="btn__icons--search-playlist fa-solid fa-magnifying-glass"
+                    ></i>
+                    <input
+                      type="text"
+                      class="input_playlist"
+                      placeholder="Search in Your Library"
+                    />
+                  </div>
+
+                  <div class="recents">
+                    <p class="text-icon--recents">Recents</p>
+                    <i class="icon--recents fa-solid fa-list-ul"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar_footer">
+                <ul class="sidebar_footer-list">
+                  <li class="sidebar_footer-item active">
+                    <a href="#" class="list_favourite-song">
+                      <i class="icon-heart fa-solid fa-heart"></i>
+                      <!-- <i class="icon-play fa-solid fa-play"></i> -->
+                    </a>
+
+                    <div class="sidebar_footer-list--content">
+                      <span class="text-siderbar_footer">Liked Songs</span>
+                      <div class="flex-des">
+                        <svg width="13px" height="13px" viewBox="0 0 16 16">
+                          <path
+                            fill="#19e68c"
+                            d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                          ></path>
+                        </svg>
+                        <p class="des-siderbar_footer">Playlist</p>
+                        <i class="icon-dot fa-solid fa-circle-small"></i>
+                        <p class="des-siderbar_footer">3 songs</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sidebar_footer-item">
+                    <a href="#" class="list_favourite-song-bg">
+                      <i class="icon-music fa-regular fa-music"></i>
+                    </a>
+
+                    <div class="sidebar_footer-list--content">
+                      <span class="text-siderbar_footer">My Playlist #3</span>
+                      <div class="flex-des">
+                        <svg width="13px" height="13px" viewBox="0 0 16 16">
+                          <path
+                            fill="#19e68c"
+                            d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                          ></path>
+                        </svg>
+                        <p class="des-siderbar_footer">Playlist</p>
+                        <i class="icon-dot fa-solid fa-circle-small"></i>
+                        <p class="des-siderbar_footer">3 songs</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sidebar_footer-item">
+                    <a href="#" class="list_favourite-song-bg">
+                      <i class="icon-music fa-regular fa-music"></i>
+                    </a>
+
+                    <div class="sidebar_footer-list--content">
+                      <span class="text-siderbar_footer">My Playlist #2</span>
+                      <div class="flex-des">
+                        <svg width="13px" height="13px" viewBox="0 0 16 16">
+                          <path
+                            fill="#19e68c"
+                            d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                          ></path>
+                        </svg>
+                        <p class="des-siderbar_footer">Playlist</p>
+                        <i class="icon-dot fa-solid fa-circle-small"></i>
+                        <p class="des-siderbar_footer">Trandaihuu</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sidebar_footer-item">
+                    <a href="#" class="list_favourite-song-bg">
+                      <i class="icon-music fa-regular fa-music"></i>
+                    </a>
+
+                    <div class="sidebar_footer-list--content">
+                      <span class="text-siderbar_footer">My Playlist #1</span>
+                      <div class="flex-des">
+                        <svg width="13px" height="13px" viewBox="0 0 16 16">
+                          <path
+                            fill="#19e68c"
+                            d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"
+                          ></path>
+                        </svg>
+                        <p class="des-siderbar_footer">Playlist</p>
+                        <i class="icon-dot fa-solid fa-circle-small"></i>
+                        <p class="des-siderbar_footer">Trandaihuu</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sidebar_footer-item">
+                    <a href="#" class="list_favourite-song--lowG"> </a>
+
+                    <div class="sidebar_footer-list--content">
+                      <span class="text-siderbar_footer">Low G</span>
+                      <div class="flex-des">
+                        <p class="des-siderbar_footer">Artist</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sidebar_footer-item">
+                    <a href="#" class="list_favourite-song--MCK"> </a>
+                    <div class="sidebar_footer-list--content">
+                      <span class="text-siderbar_footer">RPT MCK</span>
+                      <div class="flex-des">
+                        <p class="des-siderbar_footer">Artist</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sidebar_footer-item">
+                    <a href="#" class="list_favourite-song--Sivan"> </a>
+                    <div class="sidebar_footer-list--content">
+                      <span class="text-siderbar_footer">Sivan</span>
+                      <div class="flex-des">
+                        <p class="des-siderbar_footer">Artist</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
           <section class="main">ádasda</section>
           <div class="sideright">ấdsasda</div>
         </div>

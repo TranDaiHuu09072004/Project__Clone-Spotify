@@ -7,7 +7,9 @@ const InputClick = document.getElementById("Input");
 const IconsSearch = document.getElementById("Icons-Search");
 const userAvatar = document.getElementById("user");
 const listUserAcount = document.getElementById("list__user-account");
-console.log(InputClick);
+const IconPlusAside = document.getElementById("icons--list-plus");
+const listItemAside = document.getElementById("listItemAside");
+console.log(listItemAside);
 
 const Click = IconPlus.addEventListener("click", () => {
   ListPlus.classList.toggle("active");
@@ -22,7 +24,6 @@ const CloseX = Xicons.addEventListener("click", () => {
 });
 
 document.addEventListener("click", (e) => {
-  // Kiểm tra xem click có nằm trong #list-plus hoặc #plus-icon không
   if (
     !ListPlus.contains(e.target) &&
     e.target !== IconPlus &&
@@ -64,5 +65,17 @@ userAvatar.addEventListener("click", (e) => {
 document.addEventListener("click", (e) => {
   if (!userAvatar.contains(e.target) && !listUserAcount.contains(e.target)) {
     listUserAcount.style.display = "none";
+  }
+});
+
+IconPlusAside.addEventListener("click", (e) => {
+  listItemAside.classList.toggle("active");
+  e.stopPropagation();
+});
+
+// Ẩn khi click ra ngoài
+document.addEventListener("click", (e) => {
+  if (!IconPlusAside.contains(e.target) && !listItemAside.contains(e.target)) {
+    listItemAside.classList.remove("active");
   }
 });
