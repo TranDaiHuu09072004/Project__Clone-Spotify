@@ -398,13 +398,13 @@
 
 .app__container {
   background-color: var(--background-spotify);
+  margin-top: var(--header-height);
 }
 
 .content {
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  margin-top: var(--header-height);
 }
 
 /* Sidebar */
@@ -515,6 +515,7 @@
 
 .recents:hover {
   scale: 1.05;
+  cursor: pointer;
 }
 
 .recents:hover .text-icon--recents,
@@ -608,6 +609,7 @@
   align-items: center;
   padding: 8px 16px;
 }
+
 .sidebar_footer-list {
   padding-left: 0;
   width: 100%;
@@ -615,7 +617,6 @@
   border-radius: 5px;
   overflow-y: auto; /* Cho phép cuộn dọc */
   height: 400px; /* Giữ chiều cao cố định như bạn đã có */
-
   /* Ẩn thanh cuộn mặc định của trình duyệt */
   -ms-overflow-style: none; /* IE và Edge */
   scrollbar-width: thin; /* Firefox */
@@ -651,6 +652,7 @@
 .sidebar_footer-list {
   padding-right: 8px; /* Tạo khoảng cách cho thanh cuộn */
 }
+
 .list_favourite-song:nth-child(1) {
   text-decoration: none;
   color: transparent;
@@ -790,12 +792,291 @@
 
 /*  */
 
+/* Main */
 .main {
-  height: 100vh;
   background-color: #121212;
   width: var(--width-main);
-  height: var(--height-content);
+  height: var(--height-content) !important;
+  border-radius: 10px;
+  /* padding: 0 40px; */
 }
+
+.listAll {
+  margin: 25px 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.textAll {
+  background-color: var(--white-color);
+  padding: 8px 12px;
+  border-radius: 30px;
+}
+
+.textPodcasts,
+.textMusic {
+  background-color: #4c4a4a;
+  padding: 8px 12px;
+  border-radius: 30px;
+}
+
+.textPodcasts-link,
+.textMusic-link {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+.textAll-link {
+  text-decoration: none;
+  color: var(--background-spotify);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+.flex-img--artist {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wraper-artirs {
+  width: var(--witdh-artirs);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #363434;
+  border-radius: 5px;
+  gap: 10px;
+  position: relative;
+}
+
+.wraper-artirs:hover .border__artirts {
+  display: block;
+}
+
+.wraper-artirs:hover {
+  opacity: 0.8;
+}
+
+.icons-play--artirts {
+  font-size: 1.6rem;
+  color: var(--background-spotify);
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translateY(-50%);
+  line-height: 1.8rem;
+}
+
+.border__artirts {
+  position: absolute;
+  background-color: #1ed760;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+}
+
+.wraper-artirs:nth-child(3),
+.wraper-artirs:nth-child(4) {
+  margin: 0;
+}
+
+.list_flex--artist {
+  padding-left: 0;
+  margin: 0 40px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.artist_wn {
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
+
+.madefor {
+  margin-top: 60px;
+}
+
+.madefor:nth-child(3) {
+  margin-top: 50px;
+}
+
+.madefor:nth-child(4) {
+  margin-top: 30px;
+}
+
+.flex_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.ShowAll {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.35rem;
+  font-weight: 550;
+}
+
+.ShowAll:hover {
+  text-decoration: underline;
+}
+
+.madeforname {
+  font-size: 2.5rem;
+  color: var(--white-color);
+}
+
+.madeforname:hover {
+  text-decoration: underline;
+}
+
+.next_list {
+  position: relative;
+  padding: 0 10px;
+}
+
+.list_madefor {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.item_madefor {
+  margin-top: 20px;
+  width: 177.73px;
+  height: 228.13px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.item_madefor:hover {
+  background-color: #1d1d1d;
+}
+
+.item_madefor:hover .border__madefor {
+  display: block;
+}
+
+.wrap_madefor {
+  padding: 12px;
+}
+
+.madefor-text {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+.madefor-name_text {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  color: var(--white-color);
+}
+
+.madefor-name_text:hover,
+.artirt_name:hover {
+  text-decoration: underline;
+}
+.artirt_name {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin-top: 10px;
+  font-weight: 550;
+}
+
+.wrap_madefor-img {
+  width: 153.73px;
+  height: 153.73px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.icons-play--madefor {
+  font-size: 2rem;
+  color: var(--background-spotify);
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translateY(-50%);
+  line-height: 1.8rem;
+}
+
+.border__madefor {
+  position: absolute;
+  background-color: #1ed760;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top: calc(50% + 20px);
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+}
+
+.main_header {
+  padding-left: 0;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  overflow-y: auto; /* Cho phép cuộn dọc */
+  height: var(--height-content); /* Giữ chiều cao cố định như bạn đã có */
+  /* Ẩn thanh cuộn mặc định của trình duyệt */
+  -ms-overflow-style: none; /* IE và Edge */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent; /* Màu thanh cuộn và track cho Firefox */
+}
+
+/* Tùy chỉnh thanh cuộn cho Chrome, Safari, và các trình duyệt WebKit */
+.main_header::-webkit-scrollbar {
+  width: 8px; /* Độ rộng thanh cuộn */
+}
+
+.main_header::-webkit-scrollbar-track {
+  background: transparent; /* Màu nền của thanh track (không hiển thị) */
+  border-radius: 5px; /* Bo góc thanh track */
+}
+
+.main_header::-webkit-scrollbar-thumb {
+  background-color: rgba(
+    155,
+    155,
+    155,
+    0.5
+  ); /* Màu thanh cuộn xám nhạt, trong suốt */
+  border-radius: 5px; /* Bo góc thanh cuộn */
+  border: 2px solid transparent; /* Tạo khoảng cách nhỏ để nhìn mượt mà */
+}
+
+.main_header::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(155, 155, 155, 0.7); /* Màu đậm hơn khi hover */
+}
+
+/* Đảm bảo thanh cuộn không che nội dung */
+.main_header {
+  padding-right: 4px; /* Tạo khoảng cách cho thanh cuộn */
+}
+
+/*  */
 
 .sideright {
   height: 100vh;
@@ -809,4 +1090,6 @@
 .footer {
   height: var(--height-footer);
   background-color: var(--background-spotify);
+  position: sticky;
+  z-index: 1;
 }
