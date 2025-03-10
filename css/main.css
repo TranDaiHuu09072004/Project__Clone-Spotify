@@ -909,14 +909,17 @@
   color: var(--white-color);
 }
 
+.recomment,
 .madefor {
   margin-top: 60px;
 }
 
+.recomment:nth-child(3),
 .madefor:nth-child(3) {
   margin-top: 50px;
 }
 
+.recomment:nth-child(4),
 .madefor:nth-child(4) {
   margin-top: 30px;
 }
@@ -939,11 +942,15 @@
   text-decoration: underline;
 }
 
+.recently_played-name,
+.recommentname,
 .madeforname {
   font-size: 2.5rem;
   color: var(--white-color);
 }
 
+.recently_played-name:hover,
+.recommentname:hover,
 .madeforname:hover {
   text-decoration: underline;
 }
@@ -953,12 +960,14 @@
   padding: 0 10px;
 }
 
+.list_recomment,
 .list_madefor {
   display: flex;
   padding-left: 0;
   list-style: none;
 }
 
+.item_recomment,
 .item_madefor {
   margin-top: 20px;
   width: 177.73px;
@@ -967,6 +976,7 @@
   position: relative;
 }
 
+.item_recomment:hover,
 .item_madefor:hover {
   background-color: #1d1d1d;
 }
@@ -975,26 +985,35 @@
   display: block;
 }
 
+.item_recomment:hover .border__recomment {
+  display: block;
+}
+
+.wrap_recomment,
 .wrap_madefor {
   padding: 12px;
 }
 
+.recomment-name_text,
 .madefor-text {
   margin-top: 10px;
   font-size: 1.4rem;
   color: var(--text-color);
 }
 
+.recomment-name_text,
 .madefor-name_text {
   margin: 10px 0;
   font-size: 1.4rem;
   color: var(--white-color);
 }
 
+.recomment-name_text:hover,
 .madefor-name_text:hover,
 .artirt_name:hover {
   text-decoration: underline;
 }
+
 .artirt_name {
   font-size: 1.3rem;
   color: var(--text-color);
@@ -1002,6 +1021,7 @@
   font-weight: 550;
 }
 
+.wrap_recomment-img,
 .wrap_madefor-img {
   width: 153.73px;
   height: 153.73px;
@@ -1009,6 +1029,7 @@
   border-radius: 10px;
 }
 
+.icons-play--recomment,
 .icons-play--madefor {
   font-size: 2rem;
   color: var(--background-spotify);
@@ -1019,6 +1040,7 @@
   line-height: 1.8rem;
 }
 
+.border__recomment,
 .border__madefor {
   position: absolute;
   background-color: #1ed760;
@@ -1030,6 +1052,68 @@
   transform: translateY(-50%);
   cursor: pointer;
   display: none;
+}
+
+.border__recently {
+  position: absolute;
+  background-color: #1ed760;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top: calc(50% + 20px);
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+}
+
+.recently_played {
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.list_recently {
+  padding-left: 0;
+  margin: 20px;
+  list-style: none;
+  width: 133.32px;
+  height: 179.73px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.recently-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 111px;
+  height: 111px;
+  padding: 10px;
+}
+
+.recently-img:last-child {
+  border-radius: 30px;
+}
+
+.recently_text {
+  color: var(--white-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.wrapper_recently {
+  width: 133.32px;
+  height: 179.73px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.wrapper_recently:hover {
+  background-color: #1d1d1d;
+}
+
+.item_recently:hover .border__recently {
+  display: block;
 }
 
 .main_header {
@@ -1091,5 +1175,5 @@
   height: var(--height-footer);
   background-color: var(--background-spotify);
   position: sticky;
-  z-index: 1;
+  z-index: 9999999;
 }
