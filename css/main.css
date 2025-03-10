@@ -809,7 +809,7 @@
   padding-top: 8px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .textAll {
@@ -897,7 +897,7 @@
 
 .list_flex--artist {
   padding-left: 0;
-  margin: 0 40px;
+  margin: 10px 40px 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -1160,7 +1160,7 @@
   padding-right: 4px; /* Tạo khoảng cách cho thanh cuộn */
 }
 
-/*  */
+/* Sideright */
 
 .sideright {
   height: 100vh;
@@ -1168,6 +1168,88 @@
   background-color: #121212;
   margin-right: 12px;
   height: var(--height-content);
+  border-radius: 10px;
+}
+
+.wrapper_sideright {
+  margin: 25px 15px;
+}
+
+.flex_artirts--Kha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-icons_sideright {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.name_artirts {
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.icons-sideright {
+  color: #b3b3b3;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
+}
+
+.border_icons--sideright {
+  width: 32px;
+  height: 32px;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  position: relative;
+}
+
+.icons-sideright:hover {
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.playlist_kha-img {
+  margin-top: 15px;
+  width: 356px;
+  height: 356px;
+  border-radius: 10px;
+}
+
+.name_playlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.name_songs {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.name_songs:hover {
+  text-decoration: underline;
+}
+
+.artirts_name {
+  color: #b3b3b3;
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+
+.icons-check {
+  color: var(--background-green);
+  font-size: 2.2rem;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -1175,5 +1257,165 @@
   height: var(--height-footer);
   background-color: var(--background-spotify);
   position: sticky;
-  z-index: 9999999;
+}
+
+.play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play_left {
+  padding: 15px 0 15px 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 200px;
+}
+
+.play_left:hover {
+  cursor: pointer;
+}
+
+.content_play-name {
+  color: var(--white-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.content_play-artirts {
+  color: #b3b3b3;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 5px;
+  display: block;
+}
+
+.play_left-img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.icons-check_play-left {
+  color: var(--background-green);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.wrapper_content-main {
+  padding: 10px 0;
+  width: 579px;
+}
+
+.content_main {
+  display: flex;
+  align-items: center;
+}
+
+.content_main-top {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.icons-backward,
+.icons-forward,
+.icons-repeat,
+.icons-shuffle {
+  color: #b3b3b3;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.icons-play {
+  color: var(--white-color);
+  font-size: 3.2rem;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+}
+
+.content_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_main-top {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.icons-fullscreen,
+.icons-volume,
+.icons-backward,
+.icons-forward,
+.icons-repeat,
+.icons-shuffle {
+  color: #b3b3b3;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.icons-fullscreen:hover,
+.icons-volume:hover,
+.icons-backward:hover,
+.icons-forward:hover,
+.icons-repeat:hover,
+.icons-shuffle:hover {
+  color: var(--white-color);
+}
+
+.icons-play {
+  color: var(--white-color);
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#progressBar {
+  flex-grow: 1;
+  appearance: none;
+  height: 5px;
+  background: #444;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#progressBar::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#currentTime,
+#duration {
+  color: #b3b3b3;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.content_right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 15px 15px 0;
+}
+
+.icons-fullscreen:hover,
+.icons-volume:hover {
+  color: var(--white-color);
 }

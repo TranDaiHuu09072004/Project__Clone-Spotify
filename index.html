@@ -615,9 +615,89 @@
               </section>
             </div>
           </main>
-          <div class="sideright">ấdsasda</div>
+          <div class="sideright">
+            <div class="wrapper_sideright">
+              <div class="flex_artirts--Kha">
+                <h3 class="name_artirts">Kha</h3>
+                <div class="flex-icons_sideright">
+                  <span class="border_icons--sideright">
+                    <i class="icons-sideright fa-solid fa-ellipsis"></i
+                  ></span>
+                  <span class="border_icons--sideright">
+                    <i class="icons-sideright fa-solid fa-xmark"></i
+                  ></span>
+                </div>
+              </div>
+              <div>
+                <div class="list_playlist--kha">
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b273db514dcc1576003e98f8bb3c"
+                    alt=""
+                    class="playlist_kha-img"
+                  />
+                  <div class="name_playlist">
+                    <div>
+                      <a href="#" class="name_songs">Hư Không</a>
+                      <p class="artirts_name">Kha</p>
+                    </div>
+                    <i class="icons-check fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <footer class="footer"></footer>
+        <footer class="footer">
+          <div class="play">
+            <div class="play_left">
+              <img src="" alt="" class="play_left-img" />
+              <div class="content_play-left">
+                <h3 class="content_play-name"></h3>
+                <span class="content_play-artirts"></span>
+              </div>
+              <i class="icons-check_play-left fa-solid fa-circle-check"></i>
+            </div>
+            <div class="wrapper_content-main">
+              <audio id="audio"></audio>
+
+              <div class="player">
+                <div class="content_main">
+                  <div class="content_main-top">
+                    <i class="icons-shuffle fa-solid fa-shuffle"></i>
+                    <i
+                      class="icons-backward fa-solid fa-backward"
+                      id="prev"
+                    ></i>
+                    <i
+                      class="icons-play fa-solid fa-circle-play"
+                      id="playPause"
+                    ></i>
+                    <i class="icons-forward fa-solid fa-forward" id="next"></i>
+                    <i class="icons-repeat fa-solid fa-repeat"></i>
+                  </div>
+                </div>
+
+                <div class="progress-container">
+                  <span id="currentTime">0:00</span>
+                  <input
+                    type="range"
+                    id="progressBar"
+                    value="0"
+                    min="0"
+                    step="1"
+                  />
+                  <span id="duration">5:54</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="content_right">
+              <i class="icons-volume fa-solid fa-volume-low"></i>
+              <input type="range" id="volumeBar" value="0" min="0" step="1" />
+              <i class="icons-fullscreen fa-solid fa-expand"></i>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
     <script src="./js/main.js"></script>
