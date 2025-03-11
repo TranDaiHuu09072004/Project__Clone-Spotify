@@ -93,28 +93,28 @@ const shuffleBtn = document.querySelector(".icons-shuffle");
 const songs = [
   {
     name: "Hư Không",
-    img: "../img/hu_khong.jpg",
+    img: "https://trandaihuu09072004.github.io/Project__Clone-Spotify/img/hu_khong.jpg",
     artist: "Kha",
     src: "https://trandaihuu09072004.github.io/Project__Clone-Spotify/audio/HuKhong-Kha-12792565.mp3",
     duration: "5:54",
   },
   {
     name: "id 072019",
-    img: "../img/w-n.jpg",
+    img: "https://trandaihuu09072004.github.io/Project__Clone-Spotify/img/w-n.jpg",
     artist: "W/N",
     src: "https://trandaihuu09072004.github.io/Project__Clone-Spotify/audio/Id072019-WN-10597501.mp3",
     duration: "4:31",
   },
   {
     name: "Có Em",
-    img: "../img/lowG.jpg",
+    img: "https://trandaihuu09072004.github.io/Project__Clone-Spotify/img/lowG.jpg",
     artist: "Madihu ft LowG",
     src: "https://trandaihuu09072004.github.io/Project__Clone-Spotify/audio/CoEm-MadihuLowG-7211022.mp3",
     duration: "3:38",
   },
   {
     name: "Gió",
-    img: "../img/jank.jpg",
+    img: "https://trandaihuu09072004.github.io/Project__Clone-Spotify/img/jank.jpg",
     artist: "Jank",
     src: "https://trandaihuu09072004.github.io/Project__Clone-Spotify/audio/Gio-Jank-8738046.mp3",
     duration: "4:38",
