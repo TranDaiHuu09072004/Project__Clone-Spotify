@@ -135,7 +135,7 @@ function loadSong(songIndex) {
   if (imgElement) {
     imgElement.src = song.img; // Gán đường dẫn hình ảnh vào src
   } else {
-    console.error("Không tìm thấy phần tử .play_left-img");
+    console.error("Ảnh bị lỗi");
   }
 
   durationEl.textContent = song.duration;

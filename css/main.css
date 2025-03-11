@@ -411,10 +411,13 @@
 
 .sidebar {
   width: var(--width-sidebar);
+  min-width: 74px;
+  max-width: var(--width-sidebar);
   background-color: #121212;
   margin-left: 8px;
   border-radius: 10px;
   height: var(--height-content);
+  position: relative;
 }
 
 .header__yourlibrary {
