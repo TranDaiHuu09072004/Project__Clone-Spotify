@@ -181,15 +181,22 @@ function prevSong() {
   isPlaying = true;
   playPauseBtn.classList.replace("fa-circle-play", "fa-circle-pause");
 }
-
 audio.addEventListener("timeupdate", () => {
-  if (!isNaN(audio.duration) && audio.duration > 0) {
+  if (
+    !isNaN(audio.duration) &&
+    isFinite(audio.duration) &&
+    audio.duration > 0
+  ) {
     let currentMinutes = Math.floor(audio.currentTime / 60);
     let currentSeconds = Math.floor(audio.currentTime % 60);
     currentTimeEl.textContent = `${currentMinutes}:${
       currentSeconds < 10 ? "0" : ""
     }${currentSeconds}`;
-    progressBar.value = (audio.currentTime / audio.duration) * 100;
+
+    // Kiểm tra trước khi cập nhật progressBar
+    if (!isNaN(audio.currentTime) && isFinite(audio.currentTime)) {
+      progressBar.value = (audio.currentTime / audio.duration) * 100;
+    }
   }
 });
 
